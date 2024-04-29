@@ -1,0 +1,280 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF5EF"
+    android:orientation="vertical"
+    android:padding="17dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/logOut"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/logout" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp">
+
+            <ImageButton
+                android:id="@+id/button_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="14dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/share_button_description"
+                android:src="@drawable/ic_share" />
+
+            <ImageButton
+                android:id="@+id/button_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="32dp"
+                android:layout_toStartOf="@id/button_share"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/rate_button_description"
+                android:src="@drawable/ic_rating" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textViewCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/regular_font"
+            android:text="@string/Category"
+            android:textSize="40sp" />
+    </LinearLayout>
+
+    <!-- Categories LinearLayout with top margin -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="46dp"> <!-- Added top margin -->
+
+        <!-- Column 1 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp">
+
+        <ImageButton
+            android:id="@+id/animalsButton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@string/Animals_icon"
+            android:src="@drawable/ic_animels" />
+
+        <TextView
+            android:id="@+id/textViewAnimals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/animalsButton"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/regular_font"
+            android:text="@string/Animals_icon"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp">
+
+        <ImageButton
+            android:id="@+id/musicButton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@string/Music_icon"
+            android:src="@drawable/ic_music" />
+
+
+        <TextView
+            android:id="@+id/textViewMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/musicButton"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/regular_font"
+            android:text="@string/Music_icon"
+            android:textSize="24sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp">
+
+        <ImageButton
+            android:id="@+id/foodButton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@string/FOOD_icon"
+            android:src="@drawable/ic_burger" />
+
+
+        <TextView
+            android:id="@+id/textViewFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/foodButton"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/regular_font"
+            android:text="@string/FOOD_icon"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/lockIconFood"
+            android:layout_width="41dp"
+            android:layout_height="42dp"
+            android:layout_alignEnd="@+id/foodButton"
+            android:layout_alignBottom="@+id/foodButton"
+            android:layout_marginEnd="31dp"
+            android:layout_marginBottom="28dp"
+            android:src="@drawable/ic_lock" />
+    </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+
+        <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp">
+
+        <ImageButton
+            android:id="@+id/sportsButton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@string/Sport_icon"
+            android:src="@drawable/ic_sports" />
+
+
+        <TextView
+            android:id="@+id/textViewSports"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sportsButton"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/regular_font"
+            android:text="@string/Sport_icon"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/lockIconSports"
+            android:layout_width="41dp"
+            android:layout_height="42dp"
+            android:layout_alignEnd="@+id/sportsButton"
+            android:layout_alignBottom="@+id/sportsButton"
+            android:layout_marginEnd="31dp"
+            android:layout_marginBottom="28dp"
+            android:src="@drawable/ic_lock" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp">
+
+        <ImageButton
+            android:id="@+id/facesButton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@string/Faces_icon"
+            android:src="@drawable/ic_faces" />
+
+
+        <TextView
+            android:id="@+id/textViewFaces"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/facesButton"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/regular_font"
+            android:text="@string/Faces_icon"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/lockIconFaces"
+            android:layout_width="41dp"
+            android:layout_height="42dp"
+            android:layout_alignEnd="@+id/facesButton"
+            android:layout_alignBottom="@+id/facesButton"
+            android:layout_marginEnd="31dp"
+            android:layout_marginBottom="28dp"
+            android:src="@drawable/ic_lock" />
+    </RelativeLayout>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/adContainer"
+        android:layout_width="match_parent"
+        android:layout_height="108dp"
+        android:layout_marginTop="36dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+

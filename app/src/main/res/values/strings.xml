@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">MatchMemo</string>
+    <string name="start_game_description">Start game</string>
+    <string name="back_description">back</string>
+    <string name="Animals_icon">Animals</string>
+    <string name="FOOD_icon">Food</string>
+    <string name="Music_icon">Music</string>
+    <string name="Sport_icon">Sport</string>
+    <string name="Faces_icon">Face</string>
+    <string name="Category">Category</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="click_to_login">Click to login</string>
+    <string name="click_to_register">Click to register</string>
+    <string name="logout">LogOut</string>
+    <string name="dont_have_an_account">Dont have an account ? Clice here</string>
+    <string name="terms_of_use">Terms of Use</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="about">About</string>
+    <string name="premium_user">I want to be a premium user</string>
+    <string name="ca_app_pub_3940256099942544_9214589741">ad</string>
+    <string name="hamburger_button_description">hamburger_button_description</string>
+    <string name="share_button_description">share_button_description</string>
+    <string name="rate_button_description">rate_button_description</string>
+
+
+</resources>
